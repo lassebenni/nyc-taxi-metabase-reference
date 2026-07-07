@@ -1,7 +1,8 @@
--- Trip count by pickup borough, busiest first.
--- Metabase visualisation: Bar chart. Save as "Trip count by borough".
-SELECT pickup_borough,
-       COUNT(*) AS trip_count
-FROM dev_yourname.fct_trips
-GROUP BY pickup_borough
-ORDER BY trip_count DESC;
+-- TODO: write a query that returns trip count by pickup_borough,
+-- ordered by trip_count DESC. Paste it into a Metabase SQL Question,
+-- set the visualisation to Bar chart, and save it as "Trip count by borough".
+--
+-- Table:   dev_<name>.fct_trips   (replace dev_<name> with your schema, e.g. dev_jana)
+-- Columns you need: pickup_borough, and COUNT(*)
+
+SELECT 1; -- replace this
