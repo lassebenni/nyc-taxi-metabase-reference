@@ -11,5 +11,10 @@ module.exports = defineConfig({
     baseURL: process.env.METABASE_URL,
     viewport: { width: 1280, height: 900 },
     storageState: "storageState.json",
+    // Metabase ships a strict Content-Security-Policy that blocks the
+    // inline <script> Argos injects to read viewport/color-scheme info.
+    // This only relaxes CSP inside the throwaway CI browser context, not
+    // the real app or any student session.
+    bypassCSP: true,
   },
 });
