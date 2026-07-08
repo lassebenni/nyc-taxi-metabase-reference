@@ -6,6 +6,7 @@ module.exports = defineConfig({
   timeout: 60_000, // Metabase Container App cold-starts (~90s) after idle
   retries: 1,
   globalSetup: require.resolve("./global-setup.js"),
+  reporter: [["list"], ["@argos-ci/playwright/reporter"]],
   use: {
     baseURL: process.env.METABASE_URL,
     viewport: { width: 1280, height: 900 },
