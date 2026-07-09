@@ -12,17 +12,19 @@ matching `-solution` branch.
 
 ## Exercises
 
-| Exercise | Start branch | Solution branch |
-| --- | --- | --- |
-| Write a Metabase SQL Question | [`exercise-sql-question`](../../tree/exercise-sql-question) | [`exercise-sql-question-solution`](../../tree/exercise-sql-question-solution) |
-| Build a dashboard with a date filter | [`exercise-dashboard-filter`](../../tree/exercise-dashboard-filter) | [`exercise-dashboard-filter-solution`](../../tree/exercise-dashboard-filter-solution) |
+Work through them in order: Exercise 2 builds on the Question you save in Exercise 1.
+
+| # | Exercise | Start branch | Solution branch |
+| --- | --- | --- | --- |
+| 1 | Write a Metabase SQL Question | [`01-exercise-sql-question`](../../tree/01-exercise-sql-question) | [`01-exercise-sql-question-solution`](../../tree/01-exercise-sql-question-solution) |
+| 2 | Build a dashboard with a date filter | [`02-exercise-dashboard-filter`](../../tree/02-exercise-dashboard-filter) | [`02-exercise-dashboard-filter-solution`](../../tree/02-exercise-dashboard-filter-solution) |
 
 ## Setup
 
 ```bash
 git clone https://github.com/lassebenni/nyc-taxi-metabase-reference.git
 cd nyc-taxi-metabase-reference
-git switch exercise-sql-question     # then read EXERCISE.md
+git switch 01-exercise-sql-question     # then read EXERCISE.md
 ```
 
 Then log in to HYF Metabase and follow the `EXERCISE.md`. Replace `dev_yourname` in every query
@@ -32,4 +34,4 @@ with your actual schema (e.g. `dev_jana`).
 
 - Logged in to HYF Metabase (URL in the Week 11 chapter).
 - Your Week 10 `fct_trips` table populated in `dev_<name>` on the shared Azure Postgres, visible
-  in Metabase under **Browse data**.
+  in Metabase under **Databases**.
